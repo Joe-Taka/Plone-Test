@@ -13,9 +13,14 @@ const View = (props) => {
   };
 
   return (
-    <button style={inlineStyle} onClick={() => setState(state + 1)}>
-      Counter: {state}
-    </button>
+    <div className="p-8 border-solid border-black border-4">
+      <button className="bg-red-200 p-4 border-solid border-red-700 border-4" onClick={() => setState(state + 1)}>
+        Counter: {state}
+      </button>
+      <button className="bg-red-200 p-4 border-solid border-red-700 border-4" onClick={() => setState(state + 1)}>
+        Counter: {state}
+      </button>
+    </div>
   );
 };
 
