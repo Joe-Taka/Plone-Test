@@ -16,12 +16,22 @@
 // All your imports required for the config here BEFORE this line
 import '@plone/volto/config';
 
+import { Button } from './components';
+
 export default function applyConfig(config) {
   config.settings = {
     ...config.settings,
     isMultilingual: false,
     supportedLanguages: ['en'],
     defaultLanguage: 'en',
+  };
+
+  config.blocks = {
+    ...config.blocks,
+    blocksConfig: {
+      ...config.blocks.blocksConfig,
+      ...Button,
+    },
   };
   return config;
 }
