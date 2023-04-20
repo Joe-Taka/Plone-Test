@@ -8,6 +8,7 @@
  *   Footer,
  * };
  */
-import Button from './Button';
+import buttonConfig from './MyComponents/Button';
+import ourTeamConfig from './MyComponents/OurTeam'
 
-export { Button };
+export { buttonConfig, ourTeamConfig };

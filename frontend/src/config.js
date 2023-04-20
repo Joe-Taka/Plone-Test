@@ -16,7 +16,7 @@
 // All your imports required for the config here BEFORE this line
 import '@plone/volto/config';
 
-import { Button } from './components';
+import { buttonConfig, ourTeamConfig } from './components';
 
 export default function applyConfig(config) {
   config.settings = {
@@ -26,12 +26,16 @@ export default function applyConfig(config) {
     defaultLanguage: 'en',
   };
 
-  config.blocks = {
+  /* config.blocks = {
     ...config.blocks,
     blocksConfig: {
       ...config.blocks.blocksConfig,
       ...Button,
     },
-  };
+  }; */
+
+  // config.blocks.blocksConfig.[id do component]
+  config.blocks.blocksConfig.myCustomButton = buttonConfig;
+  config.blocks.blocksConfig.ourTeam = ourTeamConfig;
   return config;
 }

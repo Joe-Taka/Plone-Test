@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  p {
+    @apply text-4xl text-ferro font-poppins;
+  }
+
+  body {
+    @apply bg-slate-200;
+  }
+}
+

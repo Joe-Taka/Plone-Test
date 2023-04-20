@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: 'jit',
-  purge: [
+  content: [
     './src/**/*.html',
     './src/**/*.js',
     './src/**/*.jsx',
@@ -9,9 +9,17 @@ module.exports = {
     './src/**/*.tsx',
     './src/**/*.mdx',
   ],
-  darkMode: false,
+  media: false,
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'ferro': '#565584',
+        'roxo': 'purple'
+      },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif']
+      }
+    },
   },
   variants: {},
   plugins: [],

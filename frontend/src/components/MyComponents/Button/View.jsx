@@ -13,11 +13,11 @@ const View = (props) => {
   };
 
   return (
-    <div className="p-8 border-solid border-black border-4">
-      <button className="bg-violet-400 p-4 border-solid border-red-700 border-4" onClick={() => setState(state + 1)}>
+    <div className="p-8 border-solid border-4 flex flex-col sm:flex-row">
+      <button className="bg-blue-400 p-4 border-solid border-red-700 border-4" onClick={() => setState(state + 1)}>
         Counter: {state}
       </button>
-      <button className="bg-red-300 p-4 border-solid border-red-700 border-4" onClick={() => setState(state + 1)}>
+      <button className="bg-red-300 p-4 border-solid border-green-700 border-4" onClick={() => setState(state + 1)}>
         Counter: {state}
       </button>
     </div>
