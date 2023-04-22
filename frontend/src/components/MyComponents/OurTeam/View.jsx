@@ -7,10 +7,9 @@ const OurTeamView = (props) => {
 
   console.log('props view', props)
 
-  const data = getPageContent('/servidores/joe')
+  //const data = getPageContent('/servidores/joe')
 
-  console.log('data view', data)
-  console.log('props.content.details', props.content.details)
+  //console.log('data view', data)
 
   return (
     <div className="border-roxo border-solid border-2 p-4">
