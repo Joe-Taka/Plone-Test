@@ -1,8 +1,16 @@
-
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Container, Menu, Table, Modal } from 'semantic-ui-react';
+import getPageContent from '../../../services/searchContent'
 
 const OurTeamView = (props) => {
 
-  console.log('ourteam props', props);
+  console.log('props view', props)
+
+  const data = getPageContent('/servidores/joe')
+
+  console.log('data view', data)
+  console.log('props.content.details', props.content.details)
 
   return (
     <div className="border-roxo border-solid border-2 p-4">

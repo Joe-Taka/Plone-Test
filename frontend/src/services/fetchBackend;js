@@ -1,0 +1,10 @@
+export function getRawContent(url, headers = {}) {
+  return {
+    request: {
+      op: 'get',
+      path: url,
+      headers,
+    },
+    url,
+  };
+}
